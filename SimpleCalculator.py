@@ -16,5 +16,5 @@ print("\033[36md. Subtraction\033[0m".center(85))
 
 math = input("\nPlease choose a math operation you want to use (a/b/c/d): ")
 
-first_number = int(input("\nEnter your first number: "))
-second_number = int(input("\nEnter your second number: "))
+first_number = float(input("\nEnter your first number: "))
+second_number = float(input("\nEnter your second number: "))
