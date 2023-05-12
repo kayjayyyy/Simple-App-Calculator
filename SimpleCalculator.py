@@ -52,6 +52,41 @@ try:
     while True:
         input_again = input("\nDo you want to calculate again (yes or no)? ")
         if input_again == "yes":
+            
+            print("\n")
+            print("\033[35m Let's get started! \033[0m".center(88, "~"))
+            
+            print("\n")
+            print("\033[36ma. Multiplication\033[0m".center(85))
+            print("\033[36mb. Division\033[0m".center(85))
+            print("\033[36mc. Addition\033[0m".center(85))
+            print("\033[36md. Subtraction\033[0m".center(85))
+
+            math = input("\n\033[33;3mPlease choose a math operation you want to use (a/b/c/d): \033[0m")
+
+            first_number = float(input("\n\033[33;3mEnter your first number: \033[0m"))
+            second_number = float(input("\n\033[33;3mEnter your second number: \033[0m"))
+            
+            total = ""
+            if math == "a":
+                total = first_number * second_number
+            
+            elif math == "b":
+                total = first_number / second_number
+            
+            elif math == "c":
+                total = first_number + second_number
+            
+            elif math == "d":
+                total = first_number - second_number
+            else:
+                print("Error input character")
+                
+            print("\n\033[32mThe calculated total is: ", total, "\033[0m")
+            break
+    
+        else:
+            break
                 
 except ValueError: 
     print("INVALID: Error input characters!")
