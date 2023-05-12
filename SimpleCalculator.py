@@ -25,3 +25,30 @@ math = input("\n\033[33;3mPlease choose a math operation you want to use (a/b/c/
 
 first_number = float(input("\n\033[33;3mEnter your first number: \033[0m"))
 second_number = float(input("\n\033[33;3mEnter your second number: \033[0m"))
+
+a = "*"
+b = "/"
+c = "+"
+d = "-"
+
+try:
+    total = ""
+    if math == "a":
+        total = first_number * second_number
+    
+    elif math == "b":
+        total = first_number // second_number
+    
+    elif math == "c":
+        total = first_number + second_number
+    
+    elif math == "d":
+        total = first_number - second_number
+
+    else:
+        print("Error input character")
+        
+except ValueError: 
+    print("INVALID: Error input characters!")
+
+print(first_number, a, second_number, "=", total)
