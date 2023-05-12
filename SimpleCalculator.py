@@ -62,18 +62,22 @@ try:
             
             print("\n")
             print("\033[35m Let's get started! \033[0m".center(88, "~"))
-            
             print("\n")
+            
+            # Print the math operation choices
             print("\033[36ma. Multiplication\033[0m".center(85))
             print("\033[36mb. Division\033[0m".center(85))
             print("\033[36mc. Addition\033[0m".center(85))
             print("\033[36md. Subtraction\033[0m".center(85))
 
+            # Ask the user for math operation they want to perform
             math = input("\n\033[33;3mPlease choose a math operation you want to use (a/b/c/d): \033[0m")
 
+            # Ask the user for the integer
             first_number = float(input("\n\033[33;3mEnter your first number: \033[0m"))
             second_number = float(input("\n\033[33;3mEnter your second number: \033[0m"))
             
+            # Generate the program to perform the calculation
             total = ""
             if math == "a":
                 total = first_number * second_number
@@ -88,7 +92,8 @@ try:
                 total = first_number - second_number
             else:
                 print("Error input character")
-                
+            
+            # Print the calculated total       
             print("\n\033[32mThe calculated total is: ", total, "\033[0m")
             break
         
