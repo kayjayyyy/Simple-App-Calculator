@@ -99,3 +99,10 @@ try:
 # Use except value error to handle error encounter
 except ValueError: 
     print("INVALID: Error input characters!")
+    
+# Outro and border line
+print("\n")
+print("\033[3mThank you for supporting our program!".center(85))
+print("")
+print("\033[35m※ \033[0m" * 40)
+print("")
