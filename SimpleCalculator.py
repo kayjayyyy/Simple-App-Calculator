@@ -49,4 +49,5 @@ try:
         
 except ValueError: 
     print("INVALID: Error input characters!")
-    
+
+print("\n\033[32mThe calculated total is: ", total, "\033[0m")
