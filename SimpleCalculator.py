@@ -35,20 +35,9 @@ try:
     total = ""
     if math == "a":
         total = first_number * second_number
-    
+        
     elif math == "b":
         total = first_number // second_number
-    
-    elif math == "c":
-        total = first_number + second_number
-    
-    elif math == "d":
-        total = first_number - second_number
-
-    else:
-        print("Error input character")
-        
 except ValueError: 
     print("INVALID: Error input characters!")
-
-print(first_number, a, second_number, "=", total)
+    
