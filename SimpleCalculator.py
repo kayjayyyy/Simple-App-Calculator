@@ -37,7 +37,10 @@ try:
         total = first_number * second_number
         
     elif math == "b":
-        total = first_number // second_number
+        total = first_number / second_number
+        
+    elif math == "c":
+        total = first_number + second_number
 except ValueError: 
     print("INVALID: Error input characters!")
     
