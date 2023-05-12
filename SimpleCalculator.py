@@ -47,7 +47,11 @@ try:
     else:
         print("Error input character")
         
+    print("\n\033[32mThe calculated total is: ", total, "\033[0m")
+    
+    while True:
+        input_again = input("\nDo you want to calculate again (yes or no)? ")
+        if input_again == "yes":
+                
 except ValueError: 
     print("INVALID: Error input characters!")
-
-print("\n\033[32mThe calculated total is: ", total, "\033[0m")
