@@ -44,6 +44,9 @@ try:
         
     elif math == "d":
         total = first_number - second_number
+    else:
+        print("Error input character")
+        
 except ValueError: 
     print("INVALID: Error input characters!")
     
