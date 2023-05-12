@@ -9,7 +9,9 @@ print("")
 print("\033[45m ♥ Welcome to our calculator program! ♥ \033[0m".center(85))
 
 print("\n")
-print("\033[36mMultiplication\033[0m".center(85))
-print("\033[36mDivision\033[0m".center(85))
-print("\033[36mAddition\033[0m".center(85))
-print("\033[36mSubtraction\033[0m".center(85))
+print("\033[36ma. Multiplication\033[0m".center(85))
+print("\033[36mb. Division\033[0m".center(85))
+print("\033[36mc. Addition\033[0m".center(85))
+print("\033[36md. Subtraction\033[0m".center(85))
+
+math = input("\nPlease choose a math operation you want to use (a/b/c/d): ")
